@@ -9,7 +9,7 @@ function connectMySQL($dbServer,$dbUser,$dbPass,$dbName) {
 }
 
 function viewTerm($id,$connection) {
-    $query = "SELECT * FROM `terms` WHERE id = 2" . $id;
+    $query = "SELECT * FROM `terms` WHERE id = " . $id;
       $result = $connection->query($query);
       return $result;
   }
