@@ -1,6 +1,7 @@
 <?php
 
 include("controller.php");
+header('Content-Type: application/json');
 
 if ($_GET["action"] == "viewTerm") {
     $conflict = viewTerm($_GET["id"],$connection);

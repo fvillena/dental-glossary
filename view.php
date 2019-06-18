@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1 id=concept></h1>
+    <p id=description></p>
     <script src="jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
     var id = "<?php echo $_GET["id"]; ?>"
