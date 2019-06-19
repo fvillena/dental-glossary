@@ -7,6 +7,11 @@
     <title>Glosario Odontológico</title>
 </head>
 <body>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio error natus eos iusto voluptates sint magni rerum labore libero, repudiandae repellat nobis omnis laudantium! Nostrum aliquid ipsum rem odit! Deserunt!
+    <?php include('header.php'); ?>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum nisi, hic dicta quisquam sit soluta porro exercitationem excepturi in animi minima cumque consequatur quae suscipit magnam obcaecati cupiditate accusantium molestias?</p>
+    <form action="search.php" method="get">
+  Buscar: <input type="text" name="query"> 
+  <input type="submit" value="Submit">
+</form>
 </body>
 </html>
