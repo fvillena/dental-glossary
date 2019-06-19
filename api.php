@@ -38,13 +38,19 @@ if ($_GET["action"] == "viewTerm") {
   
   if ($_GET["action"] == "search") {
     $result = searchResults($_GET["query"],$connection);
-    while ($row = mysqli_fetch_array($result)) {
+    if ($result->num_rows > 0) {
+      while ($row = mysqli_fetch_array($result)) {
         $id = $row["id"];
         $concept = $row["concept"];
         $description = $row["description"];
         $jsonData[] = array('id'=> $id,'concept'=> $concept,'description'=> $description);
     }
     echo json_encode($jsonData, JSON_UNESCAPED_UNICODE);
+    }
+    else {
+      echo json_encode([], JSON_UNESCAPED_UNICODE);
+    }
+    
   }
 
 ?>
