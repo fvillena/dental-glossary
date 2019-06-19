@@ -20,4 +20,17 @@ function viewTerm($id,$connection) {
       return $result;
   }
 
+  function allTerms($connection) {
+    $query = "SELECT * FROM terms";
+      $result = $connection->query($query);
+      return $result;
+  }
+
+function searchResults($query,$connection) {
+    $query = "SELECT * FROM `terms` WHERE concept LIKE '%".$query."%' OR description LIKE '%".$query."%'";
+      $result = $connection->query($query);
+      return $result;
+  }
+
+  
 ?>
