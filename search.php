@@ -8,19 +8,25 @@
     <title>Búsqueda</title>
 </head>
 <body>
+<div class='container-fluid'>
 <?php include('header.php'); ?>
     <h2>Búsqueda</h2>
-    <form action="search.php" method="get">
-  Buscar: <input type="text" name="query"> 
-  <input type="submit" value="Submit">
+    <form class="form-inline" action="search.php" method="get">
+
+<input class='form-control' type="text" name="query"> 
+
+<input class='btn btn-primary' type="submit" value="Buscar">
+
 </form>
 <hr>
     <p>buscando: <b><span id=query></span></b></p>
-    <ul id=results></ul>
+    <ul id=results>...</ul>
     <script src="jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
     var query = "<?php echo $_GET["query"]; ?>"
   </script>
     <script type="text/javascript" src="search.js"></script>
+    <?php include('footer.php'); ?>
+    </div>
 </body>
 </html>

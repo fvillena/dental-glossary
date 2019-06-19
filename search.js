@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    document.title = query;
+    $( "#query" ).html( query );
     $.ajax({
       url: "api.php",
       data: {
@@ -7,8 +9,8 @@ $(document).ready(function() {
       },
       type: 'GET',
       success: function( result ) {
-        document.title = query;
-        $( "#query" ).html( query );
+        $("#results").html('');
+        
         if (result.length > 0) {
             $.each(result, function (index, value) {
                 $("#results").append("<li>" + "<a href=view.php?id=" + value.id + ">" + value.concept + "</a>" 

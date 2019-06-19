@@ -20,6 +20,7 @@ $(document).ready(function() {
       },
       type: 'GET',
       success: function( result ) {
+        $("#more").html('');
         $.each(result, function (index, value) {
           $("#more").append("<li>" + "<a href=view.php?id=" + value.id + ">" + value.concept + "</a>" + "</li>");
       });
