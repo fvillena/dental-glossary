@@ -22,7 +22,7 @@ $(document).ready(function() {
       success: function( result ) {
         $("#more").html('');
         $.each(result, function (index, value) {
-          $("#more").append("<li>" + "<a href=view.php?id=" + value.id + ">" + value.concept + "</a>" + "</li>");
+          $("#more").append("<li>" + "<a href=term.php?id=" + value.id + ">" + value.concept + "</a>" + "</li>");
       });
       }
     });

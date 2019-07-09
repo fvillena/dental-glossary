@@ -8,7 +8,7 @@ $data = json_decode($json);
 foreach($data as $row) {
     $id = $row->{'id'};
     $concept = $row->{'description'};
-    echo "<a href=view.php?id=".$id.">".$concept."</a>";
+    echo "<a href=term.php?id=".$id.">".$concept."</a>";
     echo "<br>";
     }
 

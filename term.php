@@ -26,7 +26,7 @@
     <script type="text/javascript">
     var id = "<?php echo $_GET["id"]; ?>"
   </script>
-    <script type="text/javascript" src="view.js"></script>
+    <script type="text/javascript" src="term.js"></script>
     <?php include('footer.php'); ?>
     </div>
 </body>

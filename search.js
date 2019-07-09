@@ -13,7 +13,7 @@ $(document).ready(function() {
         
         if (result.length > 0) {
             $.each(result, function (index, value) {
-                $("#results").append("<li>" + "<a href=view.php?id=" + value.id + ">" + value.concept + "</a>" 
+                $("#results").append("<li>" + "<a href=term.php?id=" + value.id + ">" + value.concept + "</a>" 
                 + "<ul><li>" + value.description + "</li></ul>"
                 + "</li>");
             });
