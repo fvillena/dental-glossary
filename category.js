@@ -12,7 +12,7 @@ $(document).ready(function() {
           document.title = result.name;
           $("#concepts").html('');
           $.each(result.terms, function (index, value) {
-            $("#concepts").append("<li>" + "<a href=term.php?id=" + value.id + ">" + value.concept + "</a>" + "</li>");
+            $("#concepts").append("<li>" + "<a href=term.php?id=" + value.id + " data-toggle='tooltip' title='" + value.description_short + "'>" + value.concept + "</a>" + "</li>");
         });
         }
       });
