@@ -27,7 +27,7 @@ function viewTerm($id,$connection) {
   }
 
 function searchResults($query,$connection) {
-    $query = "SELECT * FROM `terms` WHERE concept LIKE '%".$query."%' OR description LIKE '%".$query."%'";
+    $query = "SELECT * FROM `terms` WHERE concept LIKE '%".$query."%' OR description_short LIKE '%".$query."%'";
       $result = $connection->query($query);
       return $result;
   }

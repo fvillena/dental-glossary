@@ -31,14 +31,14 @@ USE `glossary`;
 CREATE TABLE `terms` (
   `id` int(11) NOT NULL,
   `concept` varchar(27) DEFAULT NULL,
-  `description` varchar(261) DEFAULT NULL
+  `description_short` varchar(261) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `terms`
 --
 
-INSERT INTO `terms` (`id`, `concept`, `description`) VALUES
+INSERT INTO `terms` (`id`, `concept`, `description_short`) VALUES
 (2, 'Absceso periodontal', 'Infección purulenta localizada en los tejidos que rodean el diente.'),
 (3, 'Acrílica', 'material plástico rígido.'),
 (4, 'Acrilizado', 'cambiar un material por el acrílico.'),

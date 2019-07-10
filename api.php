@@ -8,8 +8,8 @@ if ($_GET["action"] == "viewTerm") {
     while ($row = mysqli_fetch_array($conflict)) {
         $id = $row["id"];
         $concept = $row["concept"];
-        $description = $row["description"];
-        $jsonData = array('id'=> $id,'concept'=> $concept,'description'=> $description);
+        $description_short = $row["description_short"];
+        $jsonData = array('id'=> $id,'concept'=> $concept,'description_short'=> $description_short);
     }
     echo json_encode($jsonData, JSON_UNESCAPED_UNICODE);
   }
@@ -19,8 +19,8 @@ if ($_GET["action"] == "viewTerm") {
     while ($row = mysqli_fetch_array($conflict)) {
         $id = $row["id"];
         $concept = $row["concept"];
-        $description = $row["description"];
-        $jsonData[] = array('id'=> $id,'concept'=> $concept,'description'=> $description);
+        $description_short = $row["description_short"];
+        $jsonData[] = array('id'=> $id,'concept'=> $concept,'description_short'=> $description_short);
     }
     echo json_encode($jsonData, JSON_UNESCAPED_UNICODE);
   }
@@ -30,8 +30,8 @@ if ($_GET["action"] == "viewTerm") {
     while ($row = mysqli_fetch_array($result)) {
         $id = $row["id"];
         $concept = $row["concept"];
-        $description = $row["description"];
-        $jsonData[] = array('id'=> $id,'concept'=> $concept,'description'=> $description);
+        $description_short = $row["description_short"];
+        $jsonData[] = array('id'=> $id,'concept'=> $concept,'description_short'=> $description_short);
     }
     echo json_encode($jsonData, JSON_UNESCAPED_UNICODE);
   }
@@ -42,8 +42,8 @@ if ($_GET["action"] == "viewTerm") {
       while ($row = mysqli_fetch_array($result)) {
         $id = $row["id"];
         $concept = $row["concept"];
-        $description = $row["description"];
-        $jsonData[] = array('id'=> $id,'concept'=> $concept,'description'=> $description);
+        $description_short = $row["description_short"];
+        $jsonData[] = array('id'=> $id,'concept'=> $concept,'description_short'=> $description_short);
     }
     echo json_encode($jsonData, JSON_UNESCAPED_UNICODE);
     }

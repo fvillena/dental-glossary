@@ -8,7 +8,7 @@ $(document).ready(function() {
         type: 'GET',
         success: function( result ) {
           $( "#concept" ).html( result.concept );
-          $( "#description" ).html( result.description );
+          $( "#description_short" ).html( result.description_short );
           document.title = result.concept;
         }
       });
