@@ -31,6 +31,16 @@ function searchResults($query,$connection) {
       $result = $connection->query($query);
       return $result;
   }
+function categoryElements($id,$connection) {
+  $query = "SELECT * FROM `terms` WHERE category_id = " . $id;
+    $result = $connection->query($query);
+    return $result;
+}
+function categoryDescription($id,$connection) {
+  $query = "SELECT * FROM `categories` WHERE id = " . $id;
+    $result = $connection->query($query);
+    return $result;
+}
 
   
 ?>
