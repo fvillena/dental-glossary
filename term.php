@@ -27,6 +27,13 @@
     var id = "<?php echo $_GET["id"]; ?>"
   </script>
     <script type="text/javascript" src="term.js"></script>
+    <script>
+$(document).ready(function(){
+  $('body').tooltip({
+    selector: '[data-toggle="tooltip"]'
+});   
+});
+</script>
     <?php include('footer.php'); ?>
     </div>
 </body>
