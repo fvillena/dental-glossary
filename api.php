@@ -9,7 +9,8 @@ if ($_GET["action"] == "viewTerm") {
         $id = $row["id"];
         $concept = $row["concept"];
         $description_short = $row["description_short"];
-        $jsonData = array('id'=> $id,'concept'=> $concept,'description_short'=> $description_short);
+        $description_long = $row["description_long"];
+        $jsonData = array('id'=> $id,'concept'=> $concept,'description_short'=> $description_short, 'description_long'=> $description_long);
     }
     echo json_encode($jsonData, JSON_UNESCAPED_UNICODE);
   }

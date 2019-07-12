@@ -20,6 +20,7 @@
 <hr>
     <h2 id=concept>...</h2>
     <p id=description_short>...</p>
+    <p id=description_long>...</p>
     <h3>Ver más</h3>
     <ul id=more>...</ul>
     <script src="jquery-3.3.1.min.js"></script>

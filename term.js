@@ -75,6 +75,7 @@ $(document).ready(function() {
         success: function( result ) {
           $( "#concept" ).html( result.concept );
           $( "#description_short" ).html( result.description_short );
+          $( "#description_long" ).html( result.description_long );
           document.title = result.concept;
         }
       });
