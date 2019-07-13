@@ -8,17 +8,17 @@
     <title>Concepto</title>
 </head>
 <body>
-<div class='container-fluid'>
+<div class='container'>
 <?php include('header.php'); ?>
-<form class="form-inline" action="search.php" method="get">
 
-  <input class='form-control' type="text" name="query"> 
-
-  <input class='btn btn-primary' type="submit" value="Buscar">
-
-</form>
 <hr>
-    <h2 id=concept>...</h2>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item" id="category"><a href="#">...</a></li>
+    <li class="breadcrumb-item active concept" aria-current="page">...</li>
+  </ol>
+</nav>
+    <h2 class=concept>...</h2>
     <p id=description_short>...</p>
     <p id=description_long>...</p>
     <h3>Ver más</h3>

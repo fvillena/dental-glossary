@@ -8,17 +8,16 @@
     <title>Categoría</title>
 </head>
 <body>
-<div class='container-fluid'>
+<div class='container'>
 <?php include('header.php'); ?>
-<form class="form-inline" action="search.php" method="get">
 
-  <input class='form-control' type="text" name="query"> 
-
-  <input class='btn btn-primary' type="submit" value="Buscar">
-
-</form>
 <hr>
-    <h2 id=category>...</h2>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page" id="category">...</li>
+  </ol>
+</nav>
+    <!-- <h2 id=category>...</h2> -->
     <p id=description>...</p>
     <h3>Conceptos</h3>
     <ul id=concepts>...</ul>
