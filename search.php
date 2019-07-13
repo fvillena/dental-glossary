@@ -8,16 +8,10 @@
     <title>Búsqueda</title>
 </head>
 <body>
-<div class='container-fluid'>
+<div class='container'>
 <?php include('header.php'); ?>
     <h2>Búsqueda</h2>
-    <form class="form-inline" action="search.php" method="get">
 
-<input class='form-control' type="text" name="query"> 
-
-<input class='btn btn-primary' type="submit" value="Buscar">
-
-</form>
 <hr>
     <p>buscando: <b><span id=query></span></b></p>
     <ul id=results>...</ul>
