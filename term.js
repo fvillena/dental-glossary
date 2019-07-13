@@ -73,10 +73,11 @@ $(document).ready(function() {
         },
         type: 'GET',
         success: function( result ) {
-          $( "#concept" ).html( result.concept );
+          $( "#category" ).html( "<a href=category.php?id=" + result.category_id + ">" + result.category + "</a>" );
+          $( ".concept" ).html( result.name );
           $( "#description_short" ).html( result.description_short );
           $( "#description_long" ).html( result.description_long );
-          document.title = result.concept;
+          document.title = result.name;
         }
       });
     $.ajax({
