@@ -63,7 +63,7 @@ function getAllUrlParams(url) {
   return obj;
 }
 
-
+var anchors = [];
 $(document).ready(function() {
   $.ajax({
       url: "api.php",
@@ -78,7 +78,13 @@ $(document).ready(function() {
           $("#description_short").html(result.description_short);
           $("#description_long").html(result.description_long);
           document.title = result.name;
-      }
+      },
+      complete: function() {
+        $('#concept-content').find('a').each(function () {
+          console.log($(this));
+          anchors.push($(this));
+        });
+    }
   });
   $.ajax({
       url: "api.php",
@@ -94,27 +100,9 @@ $(document).ready(function() {
           });
       },
       complete: function() {
-          $("a").each(function() {
-              current_id = getAllUrlParams(this.href).id
-              var description_short;
-              if (current_id) {
-                  $.ajax({
-                      async: false,
-                      url: "api.php",
-                      data: {
-                          'action': 'viewTerm',
-                          'id': current_id
-                      },
-                      type: 'GET',
-                      success: function(result) {
-                          description_short = result.description_short;
-                      }
-                  });
-                  console.log(current_id);
-                  console.log(description_short);
-                  $(this).prop('title', description_short);
-                  $(this).attr('data-toggle', 'tooltip');
-              }
+          $('#view-more').find('a').each(function () {
+            console.log($(this));
+            anchors.push($(this));
           });
       }
   });
@@ -123,3 +111,25 @@ $(document).ready(function() {
   });
 
 });
+// $("a").each(function() {
+//   current_id = getAllUrlParams(this.href).id
+//   var description_short;
+//   if (current_id) {
+//       $.ajax({
+//           async: false,
+//           url: "api.php",
+//           data: {
+//               'action': 'viewTerm',
+//               'id': current_id
+//           },
+//           type: 'GET',
+//           success: function(result) {
+//               description_short = result.description_short;
+//           }
+//       });
+//       console.log(current_id);
+//       console.log(description_short);
+//       $(this).prop('title', description_short);
+//       $(this).attr('data-toggle', 'tooltip');
+//   }
+// });
