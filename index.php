@@ -21,7 +21,7 @@
 </div>
 <div class="card-deck">
   <div class="card text-white bg-info">
-  <!-- <img src="..." class="card-img-top" alt="..."> -->
+  <img src="https://www.clinicaeverest.cl/wp-content/uploads/2017/10/Incrustacio%CC%81n-dental.png" class="card-img-top" alt="Rehabilitación Oral">
 
     <div class="card-body">
       <h5 class="card-title">Rehabilitación Oral</h5>
