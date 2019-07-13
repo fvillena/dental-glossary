@@ -7,10 +7,12 @@ if ($_GET["action"] == "viewTerm") {
     $conflict = viewTerm($_GET["id"],$connection);
     while ($row = mysqli_fetch_array($conflict)) {
         $id = $row["id"];
-        $concept = $row["concept"];
+        $name = $row["name"];
+        $category = $row["category"];
+        $category_id = $row["category_id"];
         $description_short = $row["description_short"];
         $description_long = $row["description_long"];
-        $jsonData = array('id'=> $id,'concept'=> $concept,'description_short'=> $description_short, 'description_long'=> $description_long);
+        $jsonData = array('id'=> $id, 'category'=> $category, 'category_id'=> $category_id, 'name'=> $name,'description_short'=> $description_short, 'description_long'=> $description_long);
     }
     echo json_encode($jsonData, JSON_UNESCAPED_UNICODE);
   }
