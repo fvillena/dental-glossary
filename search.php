@@ -12,7 +12,6 @@
 <?php include('header.php'); ?>
     <h2>Búsqueda</h2>
 
-<hr>
     <p>buscando: <b><span id=query></span></b></p>
     <ul id=results>...</ul>
     <script src="jquery-3.3.1.min.js"></script>

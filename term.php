@@ -11,7 +11,6 @@
 <div class='container'>
 <?php include('header.php'); ?>
 
-<hr>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item" id="category"><a href="#">...</a></li>
