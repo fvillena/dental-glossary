@@ -63,7 +63,6 @@ function getAllUrlParams(url) {
   return obj;
 }
 
-
 $(document).ready(function() {
   $.ajax({
       url: "api.php",
@@ -78,7 +77,32 @@ $(document).ready(function() {
           $("#description_short").html(result.description_short);
           $("#description_long").html(result.description_long);
           document.title = result.name;
-      }
+      },
+      complete: function() {
+        var anchors = [];
+        $('#concept-content').find('a').each(function () {
+          anchors.push($(this));
+        });
+        $.each(anchors, function( index, anchor ) {
+          id = getAllUrlParams(anchor.attr('href')).id;
+          $.ajax({
+            async: true,
+            url: "api.php",
+            data: {
+                'action': 'viewTerm',
+                'id': id
+            },
+            type: 'GET',
+            success: function(result) {
+                description_short = result.description_short;
+                // anchor.html(result.name);
+                anchor.prop('title', description_short);
+                anchor.attr('data-toggle', 'tooltip');
+            }
+        });
+        });
+
+    }
   });
   $.ajax({
       url: "api.php",
@@ -90,31 +114,7 @@ $(document).ready(function() {
       success: function(result) {
           $("#more").html('');
           $.each(result, function(index, value) {
-              $("#more").append("<li>" + "<a href=term.php?id=" + value.id + ">" + value.concept + "</a>" + "</li>");
-          });
-      },
-      complete: function() {
-          $("a").each(function() {
-              current_id = getAllUrlParams(this.href).id
-              var description_short;
-              if (current_id) {
-                  $.ajax({
-                      async: false,
-                      url: "api.php",
-                      data: {
-                          'action': 'viewTerm',
-                          'id': current_id
-                      },
-                      type: 'GET',
-                      success: function(result) {
-                          description_short = result.description_short;
-                      }
-                  });
-                  console.log(current_id);
-                  console.log(description_short);
-                  $(this).prop('title', description_short);
-                  $(this).attr('data-toggle', 'tooltip');
-              }
+              $("#more").append("<li>" + "<a href=term.php?id=" + value.id + " data-toggle = tooltip title='"  + value.description_short + "'" + ">" + value.concept + "</a>" + "</li>");
           });
       }
   });

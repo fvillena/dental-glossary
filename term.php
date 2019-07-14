@@ -17,11 +17,15 @@
     <li class="breadcrumb-item active concept" aria-current="page">...</li>
   </ol>
 </nav>
+<div id="concept-content">
     <h2 class=concept>...</h2>
     <p id=description_short>...</p>
     <p id=description_long>...</p>
+</div>
+<div id="view-more">
     <h3>Ver más</h3>
     <ul id=more>...</ul>
+</div>
     <script src="jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
     var id = "<?php echo $_GET["id"]; ?>"
