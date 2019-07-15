@@ -11,32 +11,32 @@ error_reporting( error_reporting() & ~E_NOTICE );
 
 //Security options
 $allow_delete = true; // Set to false to disable delete button and delete POST request.
-$allow_create_folder = true; // Set to false to disable folder creation
+$allow_create_folder = false; // Set to false to disable folder creation
 $allow_upload = true; // Set to true to allow upload files
 $allow_direct_link = true; // Set to false to only allow downloads and not direct link
 // Sometimes you may need to hide sensitive files. Add them here
 $files_to_skip = array(
     '.',
     '..',
-    'index.php'
+    'index.php',
+    '.htaccess'
 );
 
 /* Uncomment section below, if you want a trivial password protection */
 
-/*
-$PASSWORD = 'sfm'; 
+
+$PASSWORD = '959773e48d708571cb0c770d5770a93de1fe7415'; 
 session_start();
 if(!$_SESSION['_sfm_allowed']) {
 	// sha1, and random bytes to thwart timing attacks.  Not meant as secure hashing.
-	$t = bin2hex(openssl_random_pseudo_bytes(10));	
-	if($_POST['p'] && sha1($t.$_POST['p']) === sha1($t.$PASSWORD)) {
+	if(sha1($_POST['p']) == $PASSWORD) {
 		$_SESSION['_sfm_allowed'] = true;
 		header('Location: ?');
 	}
 	echo '<html><body><form action=? method=post>PASSWORD:<input type=password name=p /></form></body></html>'; 
 	exit;
 }
-*/
+
 
 // must be in UTF-8 or `basename` doesn't work
 setlocale(LC_ALL,'en_US.UTF-8');
