@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="https://cdn.tiny.cloud/1/h7ji12j3a6gkfrsnilt117mt6633srzh1r6p3ajjaeh1lh0i/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="tinymce/tinymce.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.0.11/jquery.tinymce.min.js"></script> -->
-<script>tinymce.init({selector:'#description_long'});</script>
+<script>tinymce.init({
+    selector:'#description_long',
+    language: 'es',
+    menubar: 'edit insert view format table tools',
+    plugins: "image link",
+    toolbar: 'undo redo | styleselect | bold italic | link image'
+
+    });</script>
 </head>
 
 <body>
@@ -44,6 +51,7 @@
             </div>
         </form>
     </div>
+    
     <script src="../jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
         var id = "<?php echo $_GET["id"]; ?>"

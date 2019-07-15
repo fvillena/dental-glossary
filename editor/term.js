@@ -10,7 +10,7 @@ function getFormData($form){
 }
   $(document).ready(function () {
     $("#send").on('click',function() {
-
+      tinymce.triggerSave();
         var $form = $("#term_form");
         var data = getFormData($form);
         $.ajax({
@@ -18,10 +18,9 @@ function getFormData($form){
             data: JSON.stringify(data),
             type: "POST",
             success: function (result) {
-                
+              window.location.replace("term.php?id="+result.id);
             }
         });
-        console.log(data);
           
       });
     var category_id;

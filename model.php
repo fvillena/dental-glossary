@@ -50,8 +50,8 @@ function categoryDescription($id,$connection) {
 }
 function addEditTerm($id,$category_id,$concept,$description_short,$description_long,$connection) {
   $query = "INSERT INTO terms (id, category_id, concept, description_short, description_long) VALUES('".$id."','".$category_id."', '".$concept."', '".$description_short."', '".$description_long."') ON DUPLICATE KEY UPDATE category_id='".$category_id."',concept='".$concept."', description_short='".$description_short."',description_long='".$description_long."'";
-    $result = $connection->query($query);
-    return $result;
+    $connection->query($query);
+    return $connection->insert_id;
 }
 
 ?>

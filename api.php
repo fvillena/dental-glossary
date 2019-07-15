@@ -95,13 +95,22 @@ if ($_GET["action"] == "viewTerm") {
 
     if ($_GET['action'] == 'addEditTerm') {
       $data = json_decode(file_get_contents('php://input'), true);
-      addEditTerm(
+       $result = addEditTerm(
         $data['id'],
         $data['category_id'],
         $data['concept'],
         $data['description_short'],
         $data['description_long'],
         $connection);
+      if ($data['id'] == 'NULL') {
+        $id = $result;
+        $jsonData = array('id'=> $id);
+        echo json_encode($jsonData, JSON_UNESCAPED_UNICODE);
+      } else {
+        $id = $data['id'];
+        $jsonData = array('id'=> $id);
+        echo json_encode($jsonData, JSON_UNESCAPED_UNICODE);
+      }
     }
 
 
