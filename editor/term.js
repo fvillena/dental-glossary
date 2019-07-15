@@ -23,7 +23,8 @@ function getFormData($form){
         });
           
       });
-    var category_id;
+    if (id != 'NULL') {
+      var category_id;
     $.ajax({
       url: "../api.php",
       data: {
@@ -58,6 +59,26 @@ function getFormData($form){
         });
       }
     });
+    } else {
+      $.ajax({
+        url: "../api.php",
+        data: {
+            'action': 'categories'
+        },
+        type: 'GET',
+        success: function(result) {
+            $.each(result, function(index, value) {
+                $("#category").append("<option value="+value.id+">" + value.name + "</option>");
+            });
+        },
+        complete: function () {
+            $("#category").val(category_id);
+           
+        }
+    });
+    $("#id").val('NULL');
+    }
+    
     
   });
   
