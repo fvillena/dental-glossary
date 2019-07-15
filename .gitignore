@@ -1,3 +1,4 @@
 config.php
 deploy-log.txt
-img
+img/*
+!img/files.php
