@@ -37,7 +37,7 @@ if ($_GET["action"] == "viewTerm") {
         $name = $row["name"];
         $description_short = $row["description_short"];
         $description_long = $row["description_long"];
-        $jsonData[] = array('id'=> $id,'category_id'=> $category_id,'name'=> $name,'description_short'=> $description_short,'description_long'=> $description_long);
+        $jsonData[] = array('id'=> $id,'category_id'=> $category_id,'category'=> $category,'name'=> $name,'description_short'=> $description_short,'description_long'=> $description_long);
     }
     echo json_encode($jsonData, JSON_UNESCAPED_UNICODE);
   }
@@ -92,5 +92,17 @@ if ($_GET["action"] == "viewTerm") {
     }
     
   }
+
+    if ($_GET['action'] == 'addEditTerm') {
+      $data = json_decode(file_get_contents('php://input'), true);
+      addEditTerm(
+        $data['id'],
+        $data['category_id'],
+        $data['concept'],
+        $data['description_short'],
+        $data['description_long'],
+        $connection);
+    }
+
 
 ?>
