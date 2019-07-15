@@ -53,5 +53,10 @@ function addEditTerm($id,$category_id,$concept,$description_short,$description_l
     $connection->query($query);
     return $connection->insert_id;
 }
+function deleteTerm($id,$connection) {
+  $query = "DELETE from terms WHERE id = " . $id;
+  $result = $connection->query($query);
+  return $result;
+}
 
 ?>

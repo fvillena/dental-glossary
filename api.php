@@ -113,5 +113,9 @@ if ($_GET["action"] == "viewTerm") {
       }
     }
 
+    if ($_GET['action'] == 'deleteTerm') {
+       $result = deleteTerm($_GET['id'], $connection);
+      
+    }
 
 ?>
