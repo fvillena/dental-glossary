@@ -22,7 +22,7 @@ $(document).ready(function() {
         success: function(result) {
             $("#categories").html('');
             $.each(result, function(index, value) {
-                $("#categories").append("<tr><td>" + value.name + "</td><td><div class='btn-group' role='group'><a href='../term.php?id=" + value.id + "' type='button' class='btn btn-primary'><i class='fas fa-eye'></i></a><a href='term.php?id=" + value.id + "' type='button' class='btn btn-primary'><i class='fas fa-edit'></i></a><a href='' type='button' class='btn btn-danger'><i class='fas fa-trash'></i></a></div></td></tr>");
+                $("#categories").append("<tr><td>" + value.name + "</td><td><div class='btn-group' role='group'><a href='../category.php?id=" + value.id + "' type='button' class='btn btn-primary'><i class='fas fa-eye'></i></a><a href='category.php?id=" + value.id + "' type='button' class='btn btn-primary'><i class='fas fa-edit'></i></a><a href='?delete=category&id="+value.id+"' type='button' class='btn btn-danger'><i class='fas fa-trash'></i></a></div></td></tr>");
             });
         }
     });

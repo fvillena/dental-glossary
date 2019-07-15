@@ -6,7 +6,7 @@ if (isset($_GET['delete'])) {
         deleteTerm($_GET['id'],$connection);
     };
     if ($_GET['delete'] == 'category') {
-        # code...
+        deleteCategory($_GET['id'],$connection);
     }
     
     

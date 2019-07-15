@@ -58,5 +58,15 @@ function deleteTerm($id,$connection) {
   $result = $connection->query($query);
   return $result;
 }
+function addEditCategory($id,$name,$description,$connection) {
+  $query = "INSERT INTO categories (id, name, description) VALUES('".$id."','".$name."', '".$description."') ON DUPLICATE KEY UPDATE name='".$name."',description='".$description."'";
+    $connection->query($query);
+    return $connection->insert_id;
+}
+function deleteCategory($id,$connection) {
+  $query = "DELETE from categories WHERE id = " . $id;
+  $result = $connection->query($query);
+  return $result;
+}
 
 ?>

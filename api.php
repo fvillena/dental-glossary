@@ -72,7 +72,7 @@ if ($_GET["action"] == "viewTerm") {
   if ($_GET["action"] == "viewCategory") {
     $categoryData = categoryDescription($_GET["id"],$connection);
     while ($row = mysqli_fetch_array($categoryData)) {
-        $id = $row["id"];
+        $category_id = $row["id"];
         $name = $row["name"];
         $description = $row["description"];
     }
@@ -84,7 +84,7 @@ if ($_GET["action"] == "viewTerm") {
         $description_short = $row["description_short"];
         $terms[] = array('id'=> $id,'concept'=> $concept,'description_short'=> $description_short);
     }
-    $jsonData = array('id'=> $id,'name'=> $name,'description'=> $description, 'terms' => $terms);
+    $jsonData = array('id'=> $category_id,'name'=> $name,'description'=> $description, 'terms' => $terms);
     echo json_encode($jsonData, JSON_UNESCAPED_UNICODE);
     }
     else {
@@ -116,6 +116,23 @@ if ($_GET["action"] == "viewTerm") {
     if ($_GET['action'] == 'deleteTerm') {
        $result = deleteTerm($_GET['id'], $connection);
       
+    }
+    if ($_GET['action'] == 'addEditCategory') {
+      $data = json_decode(file_get_contents('php://input'), true);
+       $result = addEditCategory(
+        $data['id'],
+        $data['name'],
+        $data['description'],
+        $connection);
+      if ($data['id'] == 'NULL') {
+        $id = $result;
+        $jsonData = array('id'=> $id);
+        echo json_encode($jsonData, JSON_UNESCAPED_UNICODE);
+      } else {
+        $id = $data['id'];
+        $jsonData = array('id'=> $id);
+        echo json_encode($jsonData, JSON_UNESCAPED_UNICODE);
+      }
     }
 
 ?>
