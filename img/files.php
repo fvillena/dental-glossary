@@ -29,7 +29,7 @@ $PASSWORD = '959773e48d708571cb0c770d5770a93de1fe7415';
 session_start();
 if(!$_SESSION['_sfm_allowed']) {
 	// sha1, and random bytes to thwart timing attacks.  Not meant as secure hashing.
-	if(sha1($$_POST['p']) === $PASSWORD) {
+	if(sha1($_POST['p']) == $PASSWORD) {
 		$_SESSION['_sfm_allowed'] = true;
 		header('Location: ?');
 	}
