@@ -88,7 +88,8 @@ if ($_GET["action"] == "viewTerm") {
     echo json_encode($jsonData, JSON_UNESCAPED_UNICODE);
     }
     else {
-      echo json_encode([], JSON_UNESCAPED_UNICODE);
+      $jsonData = array('id'=> $category_id,'name'=> $name,'description'=> $description, 'terms' => []);
+      echo json_encode($jsonData, JSON_UNESCAPED_UNICODE);
     }
     
   }

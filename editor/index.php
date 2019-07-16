@@ -45,7 +45,7 @@ if (isset($_GET['delete'])) {
         </table>
         <!-- <ul id=terms>...</ul> -->
         <h2>Categorías</h2>
-        <p><a href="#" type="button" class="btn btn-success"><i class="fas fa-plus"></i></a></p>
+        <p><a href="category.php?id=NULL" type="button" class="btn btn-success"><i class="fas fa-plus"></i></a></p>
         <table class="table">
             <thead>
                 <tr>
