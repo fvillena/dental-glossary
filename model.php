@@ -21,10 +21,17 @@ function viewTerm($id,$connection) {
   }
 
   function allTerms($connection) {
-    $query = "SELECT * FROM terms";
+    $query = "SELECT terms.id, terms.category_id, categories.name AS category, terms.concept AS name, terms.description_short, terms.description_long FROM categories, terms WHERE terms.category_id = categories.id";
       $result = $connection->query($query);
       return $result;
   }
+  
+  function allCategories($connection) {
+    $query = "SELECT * FROM categories";
+      $result = $connection->query($query);
+      return $result;
+  }
+
 
 function searchResults($query,$connection) {
     $query = "SELECT * FROM `terms` WHERE concept LIKE '%".$query."%' OR description_short LIKE '%".$query."%'";
@@ -41,6 +48,25 @@ function categoryDescription($id,$connection) {
     $result = $connection->query($query);
     return $result;
 }
+function addEditTerm($id,$category_id,$concept,$description_short,$description_long,$connection) {
+  $query = "INSERT INTO terms (id, category_id, concept, description_short, description_long) VALUES('".$id."','".$category_id."', '".$concept."', '".$description_short."', '".$description_long."') ON DUPLICATE KEY UPDATE category_id='".$category_id."',concept='".$concept."', description_short='".$description_short."',description_long='".$description_long."'";
+    $connection->query($query);
+    return $connection->insert_id;
+}
+function deleteTerm($id,$connection) {
+  $query = "DELETE from terms WHERE id = " . $id;
+  $result = $connection->query($query);
+  return $result;
+}
+function addEditCategory($id,$name,$description,$connection) {
+  $query = "INSERT INTO categories (id, name, description) VALUES('".$id."','".$name."', '".$description."') ON DUPLICATE KEY UPDATE name='".$name."',description='".$description."'";
+    $connection->query($query);
+    return $connection->insert_id;
+}
+function deleteCategory($id,$connection) {
+  $query = "DELETE from categories WHERE id = " . $id;
+  $result = $connection->query($query);
+  return $result;
+}
 
-  
 ?>
