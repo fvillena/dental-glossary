@@ -102,6 +102,8 @@ if($_GET['do'] == 'list') {
 	var_dump($_POST);
 	var_dump($_FILES);
 	var_dump($_FILES['file_data']['tmp_name']);
+	$file_name = $_FILES['file_data']['name'];
+	$file_name = str_replace(' ', '+', $file_name);
 	var_dump(move_uploaded_file($_FILES['file_data']['tmp_name'], $file.'/'.$_FILES['file_data']['name']));
 	exit;
 } elseif ($_GET['do'] == 'download') {
