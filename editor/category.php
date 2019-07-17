@@ -10,6 +10,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.0.11/jquery.tinymce.min.js"></script> -->
 <script>tinymce.init({
     selector:'#description',
+    relative_urls: false,
     language: 'es',
     menubar: 'edit insert view format table tools',
     plugins: "image link",
