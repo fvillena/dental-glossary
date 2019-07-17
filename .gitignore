@@ -2,3 +2,4 @@ config.php
 deploy-log.txt
 img/*
 !img/index.php
+.htpasswd
