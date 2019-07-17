@@ -14,7 +14,7 @@
     language: 'es',
     menubar: 'edit insert view format table tools',
     plugins: "image link",
-    toolbar: 'undo redo | styleselect | bold italic | link image'
+    toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image'
 
     });</script>
 </head>
