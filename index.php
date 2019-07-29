@@ -26,7 +26,7 @@
 
     <div class="card-body">
       <h5 class="card-title">Rehabilitación Oral</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text">Área de la odontología que devuelve estética y función cuando se han perdido dientes o parte de ellos.</p>
     </div>
     <div class="card-footer bg-transparent border-success text-center">
     <a href="category.php?id=2" class="btn btn-primary">Ver Más</a>
@@ -52,7 +52,7 @@
 
     <div class="card-body">
       <h5 class="card-title">Endodoncia</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text">Rama de la odontologia que trata la morfologia, fisiologia y patologia del interior del diente y sus tejidos perirradiculares.</p>
     </div>
     <div class="card-footer bg-transparent border-success text-center">
     <a href="category.php?id=4" class="btn btn-primary">Ver Más</a>
@@ -68,6 +68,18 @@
     </div>
     <div class="card-footer bg-transparent border-success text-center">
     <a href="category.php?id=5" class="btn btn-primary">Ver Más</a>
+    </div>
+
+  </div>
+  <div class="card text-white bg-info">
+  <img src="https://www.erescambio.com/wp-content/uploads/2019/05/books-1673578_640.png" class="card-img-top" alt="Odontopediatría">
+
+    <div class="card-body">
+      <h5 class="card-title">Glosario</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+    <div class="card-footer bg-transparent border-success text-center">
+    <a href="category.php?id=1" class="btn btn-primary">Ver Más</a>
     </div>
 
   </div>
