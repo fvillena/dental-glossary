@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Glosario Odontológico</title>
+    <title>Portaldent</title>
 </head>
 <body>
 <div class='container'>
@@ -13,10 +13,10 @@
 
     
 <div class="jumbotron">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <h1 class="display-4">Bienvenio(a)!</h1>
+  <p class="lead">Esta página fue diseñada por alumnas de la carrera de odontología de la Universidad Andrés Bello y tiene como finalidad entregar información odontológica de fácil comprensión a la comunidad. Esperamos que sea de gran ayuda.</p>
   <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p>Acá abajo encontrarás los distintos temas disponibles.</p>
 
 </div>
 <div class="card-deck">
