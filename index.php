@@ -48,7 +48,7 @@
 
   </div>
   <div class="card text-white bg-info">
-  <img src="http://www.lastraclinicadental.com/wp-content/uploads/2014/11/servicios-endodoncia.jpg" class="card-img-top" alt="Endodoncia">
+  <img src="https://www.lastraclinicadental.com/wp-content/uploads/2014/11/servicios-endodoncia.jpg" class="card-img-top" alt="Endodoncia">
 
     <div class="card-body">
       <h5 class="card-title">Endodoncia</h5>
@@ -60,7 +60,7 @@
 
   </div>
   <div class="card text-white bg-info">
-  <img src="http://www.ortodonciafuncional.es/wp-content/uploads/2018/12/odontopediatria.jpg" class="card-img-top" alt="Odontopediatría">
+  <img src="https://www.ortodonciafuncional.es/wp-content/uploads/2018/12/odontopediatria.jpg" class="card-img-top" alt="Odontopediatría">
 
     <div class="card-body">
       <h5 class="card-title">Odontopediatría</h5>
