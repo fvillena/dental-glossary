@@ -71,10 +71,10 @@
     </div>
 
   </div>
-  <div class="card text-white bg-info">
+  <!-- <div class="card text-white bg-info">
   <img src="https://www.erescambio.com/wp-content/uploads/2019/05/books-1673578_640.png" class="card-img-top" alt="Glosario">
 
-    <!-- <div class="card-body">
+    <div class="card-body">
       <h5 class="card-title">Glosario</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
     </div>
