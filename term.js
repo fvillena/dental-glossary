@@ -86,6 +86,7 @@ $(document).ready(function () {
       document.title = result.name;
     },
     complete: function () {
+      $('#concept-content img').addClass("img-fluid");
       var anchors = [];
       $('#concept-content').find('a').each(function () {
         anchors.push($(this));
@@ -126,6 +127,9 @@ $(document).ready(function () {
       });
     }
   });
+
+  
+
   $(document).ajaxComplete(function () {
 
 
