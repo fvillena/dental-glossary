@@ -29,6 +29,7 @@
       <ul id=more>...</ul>
     </div>
     <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery-doubleTap.js"></script>
     <script type="text/javascript">
       var id = "<?php echo $_GET["id"]; ?>"
     </script>
