@@ -22,7 +22,7 @@
 <div class="card-columns">
 
   <div class="card text-white bg-info">
-  <img src="https://www.clinicaeverest.cl/wp-content/uploads/2017/10/Incrustacio%CC%81n-dental.png" class="card-img-top" alt="Rehabilitación Oral">
+  <a href="category.php?id=2"><img src="https://www.clinicaeverest.cl/wp-content/uploads/2017/10/Incrustacio%CC%81n-dental.png" class="card-img-top" alt="Rehabilitación Oral"></a>
 
     <div class="card-body">
       <h5 class="card-title">Rehabilitación Oral</h5>
@@ -34,7 +34,7 @@
 
   </div>
   <div class="card text-white bg-info">
-  <img src="https://clinicaenrile.es/wp-content/uploads/2019/01/periodoncia3.jpg" class="card-img-top" alt="Periodoncia">
+  <a href="category.php?id=3"><img src="https://clinicaenrile.es/wp-content/uploads/2019/01/periodoncia3.jpg" class="card-img-top" alt="Periodoncia"></a>
 
     <div class="card-body">
       <h5 class="card-title">Periodoncia</h5>
@@ -48,7 +48,7 @@
 
   </div>
   <div class="card text-white bg-info">
-  <img src="https://www.lastraclinicadental.com/wp-content/uploads/2014/11/servicios-endodoncia.jpg" class="card-img-top" alt="Endodoncia">
+  <a href="category.php?id=4"><img src="https://www.lastraclinicadental.com/wp-content/uploads/2014/11/servicios-endodoncia.jpg" class="card-img-top" alt="Endodoncia"></a>
 
     <div class="card-body">
       <h5 class="card-title">Endodoncia</h5>
@@ -60,10 +60,10 @@
 
   </div>
   <div class="card text-white bg-info">
-  <img src="https://www.ortodonciafuncional.es/wp-content/uploads/2018/12/odontopediatria.jpg" class="card-img-top" alt="Odontopediatría">
+  <a href="category.php?id=5"><img src="https://www.ortodonciafuncional.es/wp-content/uploads/2018/12/odontopediatria.jpg" class="card-img-top" alt="Odontopediatría"></a>
 
     <div class="card-body">
-      <h5 class="card-title">Odontopediatría</h5>
+    <h5 class="card-title">Odontopediatría</h5>
       <p class="card-text">Area de la odontología encargada de tratar a los niños entre 0 a 12 años con enfoque preventivo y ayudando a supervisar un correcto desarrollo dento-facial del menor.</p>
     </div>
     <div class="card-footer bg-transparent border-success text-center">
