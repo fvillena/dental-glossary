@@ -16,4 +16,20 @@ $(document).ready(function() {
         });
         }
       });
+    var $speech = $('#description');
+    var defaultSize = $speech.css('fontSize');
+    $('#switcher button').click(function() {
+      var num = parseFloat($speech.css('fontSize'));
+      switch (this.id) {
+        case 'switcher-large':
+          num *= 1.3;
+          break;
+        case 'switcher-small':
+          num /= 1.3;
+          break;
+        default:
+          num = parseFloat(defaultSize);
+      }
+      $speech.css('fontSize', num + 'px');
+    });
 });

@@ -20,9 +20,13 @@
       </ol>
     </nav>
     <div id="concept-content">
+    <div class="btn-group" role="group" id="switcher">
+      <button type="button" class="btn btn-primary" id="switcher-small"><i class="fas fa-minus"></i> <i class="fas fa-font"></i></button>
+      <button type="button" class="btn btn-primary" id="switcher-large"><i class="fas fa-plus"></i> <i class="fas fa-font"></i></button>
+      </div>  
       <h2 class=concept>...</h2>
-      <p id=description_short>...</p>
-      <p id=description_long>...</p>
+      <p class="resizeable" id=description_short>...</p>
+      <p class="resizeable" id=description_long>...</p>
     </div>
     <div id="view-more">
       <h3>Ver más</h3>
