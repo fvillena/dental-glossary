@@ -24,6 +24,7 @@
       <button type="button" class="btn btn-primary" id="switcher-small"><i class="fas fa-minus"></i> <i class="fas fa-font"></i></button>
       <button type="button" class="btn btn-primary" id="switcher-large"><i class="fas fa-plus"></i> <i class="fas fa-font"></i></button>
       </div>  
+      <hr>
       <h2 class=concept>...</h2>
       <p class="resizeable" id=description_short>...</p>
       <p class="resizeable" id=description_long>...</p>
