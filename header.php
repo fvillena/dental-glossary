@@ -2,6 +2,8 @@
 <script src="https://kit.fontawesome.com/b7c0bed79a.js"></script>
 <style>
 .navbar {background-color: #FFF;}
+#authors {background-color: #FFF;
+padding: 2pt}
 </style>
 <nav class="navbar ">
 
