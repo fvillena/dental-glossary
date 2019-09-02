@@ -5,7 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+  <style>
+#concept-content {background-color: #2AC3C1;
+padding: 10pt;
+border-radius: 15px}
+</style>
   <title>Concepto</title>
 </head>
 
