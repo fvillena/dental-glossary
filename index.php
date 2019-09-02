@@ -10,8 +10,10 @@
 <div class='container'>
     <?php include('header.php'); ?>
     
-
-    
+    <style>
+body {background-image: url("bg.jpeg");}
+</style>
+    <br>
 <div class="jumbotron">
   <h1 class="display-4">Bienvenido(a)!</h1>
   <p class="lead">Esta página fue diseñada por alumnas de la carrera de odontología de la Universidad Andrés Bello y tiene como finalidad entregar información odontológica de fácil comprensión a la comunidad. Esperamos que sea de gran ayuda.</p>
