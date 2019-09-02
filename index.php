@@ -85,8 +85,8 @@ body {background-image: url("bg.jpeg");}
     </div> -->
 
   </div>
-  
-
+  <div align='right' ><img class="img-responsive" width=200 src="https://www.donde-estudiar-medicina.es/wp-content/uploads//2018/07/dentista.gif?x40160" alt="">
+</div>
 <?php include('footer.php'); ?>
 </div>
 </body>
