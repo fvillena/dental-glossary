@@ -10,11 +10,11 @@
 <div class='container'>
     <?php include('header.php'); ?>
     
-    <style>
+    <!-- <style>
 #welcome {background-image: url("bg.jpeg") !important;
 color: #000 !important;
 font-weight: bold !important}
-</style>
+</style> -->
     <br>
 <div id="welcome" class="jumbotron">
   <h1 class="display-4">Bienvenido(a)!</h1>
