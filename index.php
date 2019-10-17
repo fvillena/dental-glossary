@@ -88,7 +88,10 @@ font-weight: bold !important}
     </div> -->
 
   </div>
-  <div align='right' ><img class="img-responsive" width=200 src="https://www.donde-estudiar-medicina.es/wp-content/uploads//2018/07/dentista.gif?x40160" alt="">
+  <br>
+  <div align='right' ><a href="category.php?id=1">
+  <img class="img-responsive" width=200 src="https://www.donde-estudiar-medicina.es/wp-content/uploads//2018/07/dentista.gif?x40160" alt="">
+  </a><br><br><a href="category.php?id=1" class="btn btn-primary">Términos Dentales</a>
 </div>
 <?php include('footer.php'); ?>
 </div>
