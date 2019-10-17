@@ -23,7 +23,7 @@ font-weight: bold !important}
   <p>A continuación encontrarás las distintas especialidades disponibles.</p>
 
 </div>
-<div class="card-columns">
+<div class="card-deck">
 
   <div class="card text-white bg-info">
   <a href="category.php?id=2"><img src="https://www.clinicaeverest.cl/wp-content/uploads/2017/10/Incrustacio%CC%81n-dental.png" class="card-img-top" alt="Rehabilitación Oral"></a>
@@ -51,6 +51,7 @@ font-weight: bold !important}
 
 
   </div>
+  <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><br></div>
   <div class="card text-white bg-info">
   <a href="category.php?id=4"><img src="https://www.lastraclinicadental.com/wp-content/uploads/2014/11/servicios-endodoncia.jpg" class="card-img-top" alt="Endodoncia"></a>
 
