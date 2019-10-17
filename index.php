@@ -17,8 +17,8 @@ font-weight: bold !important}
 </style> -->
     <br>
 <div id="welcome" class="jumbotron">
-  <h1 class="display-4">Bienvenido(a)!</h1>
-  <p class="lead">Esta página fue diseñada por alumnas de la carrera de odontología de la Universidad Andrés Bello y tiene como finalidad entregar información odontológica de fácil comprensión a la comunidad. Esperamos que sea de gran ayuda.</p>
+  <h1 class="display-4">Bienvenidos!</h1>
+  <p class="lead">Portaldent es un página web diseñada para entregar información Odontológica de fácil compresión.</p>
   <hr class="my-4">
   <p>A continuación encontrarás las distintas especialidades disponibles.</p>
 
