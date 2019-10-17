@@ -16,7 +16,7 @@ color: #000 !important;
 font-weight: bold !important}
 </style> -->
     <br>
-<div id="welcome" class="jumbotron">
+<div id="welcome" class="jumbotron bg-info text-white">
   <h1 class="display-4">Bienvenidos!</h1>
   <p class="lead">Portaldent es un página web diseñada para entregar información Odontológica de fácil compresión.</p>
   <hr class="my-4">
