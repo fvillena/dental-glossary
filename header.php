@@ -16,7 +16,7 @@ padding: 2pt}
 </style>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-  <a class="navbar-brand" href="index.php"><img src="https://www.unab.cl/wp-content/themes/unab-base/img/logos/logo-header.png" height="30" alt=""> Información Odontológica</a>
+  <a class="navbar-brand" href="index.php"><img src="img/tooth.png" height="30" alt=""> Información Odontológica</a>
   <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="index.php">Inicio</a>
