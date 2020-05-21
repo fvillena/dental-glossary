@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <style>
-#concept-content {background-color: #2AC3C1;
+#concept-content {background-color: #86F9F9;
 padding: 10pt;
 border-radius: 15px}
 </style>
@@ -33,6 +33,7 @@ border-radius: 15px}
       <p class="resizeable" id=description_short>...</p>
       <p class="resizeable" id=description_long>...</p>
     </div>
+    <br>
     <div id="view-more">
       <h3>Ver más</h3>
       <ul id=more>...</ul>
