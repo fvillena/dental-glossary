@@ -65,7 +65,7 @@ font-weight: bold !important}
 
   </div>
   <div class="card text-white bg-info">
-  <a href="category.php?id=5"><img src="https://www.ortodonciafuncional.es/wp-content/uploads/2018/12/odontopediatria.jpg" class="card-img-top" alt="Odontopediatría"></a>
+  <a href="category.php?id=5"><img src="http://portaldent.tk/img/odontopesadilla-2.jpg" class="card-img-top" alt="Odontopediatría"></a>
 
     <div class="card-body">
     <h5 class="card-title">Odontopediatría</h5>
